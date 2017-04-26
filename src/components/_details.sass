@@ -1,0 +1,91 @@
+@import "datapicer"
+
+.details-block
+  position: relative
+  z-index: 3
+  padding-top: 120px
+
+  ol
+    li
+      list-style: inherit
+      list-style-type: decimal
+      color: #7be352
+      font: normal 300 30px/24px 'Russia-Light', sans-serif
+      p
+        color: $text_color_colom
+        font: normal 400 18px/24px 'Museo Sans Cyrl 300', sans-serif
+        mark
+          color: $hovered_link
+          background: none
+
+
+  .top-text-title
+    margin-bottom: 54px
+
+  .icon
+    max-width: 44px
+
+  .description
+    p
+      margin: 0
+      margin-left: 23px
+
+
+  .dataoicker-wraper
+    background: #f4f6f7
+    border-radius: 20px
+    box-shadow: 0 15px 0px -10px #d7f7cb
+    padding: 80px 0 40px 0
+    overflow: hidden
+    position: relative
+
+  .description-text-block
+    width: 375px
+    margin: 0 auto
+    .griin-mark
+      +color-mark($gradient-start)
+    .read-mark
+      +color-mark($gradient-end-hover)
+    .greay-mark
+      +color-mark($text_color_grey)
+
+
+  .circles-right
+    margin-top: 100px
+    border-left: solid 42px transparent
+    border-image: url('../src/img/circle_border-min.png') 0 100% round
+    padding-left: 50px
+    margin-left: 10px
+
+  .react-datepicker
+    max-width: 375px
+    margin: 0 auto
+
+  .button
+    position: relative
+    z-index: 2
+
+  .circleImg
+    width: 260px
+    height: 260px
+    background: #fff
+    justify-content: space-around
+    position: absolute
+    bottom: -60px
+    right: -70px
+
+    .circle2
+      width: 200px
+      height: 200px
+      background: #fff
+      justify-content: space-around
+      border: solid 10px #f4f6f7
+
+      .circle1
+        width: 180px
+        height: 180px
+        background: #f4f6f7
+        justify-content: space-around
+
+
+
