@@ -17,6 +17,7 @@ class Header extends React.Component {
 
   handleClick(e) {
     e.preventDefault();
+    return alert('Прикрутить видео с утуба');
   };
 
   render() {
@@ -44,7 +45,7 @@ class Header extends React.Component {
                 <a href="#" className="inline rounded-full  play-nucleus"
                    onMouseLeave={this.handleOver}
                    onMouseOver={this.handleOver}
-                   onClick={Header.handleClick}>
+                   onClick={this.handleClick}>
                 </a>
                 <div className={this.state.isToggleOn ? 'OFF_hovered' +  " cell-top cell-width-100  button-play-text-wotch" : 'ON_hovered'  +  " cell-top cell-width-100  button-play-text-wotch"}>Смотреть</div>
               </div>
